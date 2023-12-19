@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { isLogged, isNotLogged } from 'auth';
-
+import { isLogged, isNotLogged } from '@@auth';
 const routes: Routes = [
   {
     path: '',
@@ -11,7 +10,7 @@ const routes: Routes = [
   {
     path: '',
     canMatch: [isNotLogged],
-    loadChildren: () => import("./pages/login/login.module").then(m => m.LoginModule)
+    loadChildren: () => import("@@login").then(m => m.LoginModule)
   }
 ];
 

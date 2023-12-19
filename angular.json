@@ -164,12 +164,12 @@
       "schematics": {},
       "root": "projects/login",
       "sourceRoot": "projects/login/src",
-      "prefix": "app",
+      "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/login",
+            "outputPath": "dist/login-lib",
             "index": "projects/login/src/index.html",
             "main": "projects/login/src/main.ts",
             "polyfills": "projects/login/src/polyfills.ts",

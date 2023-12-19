@@ -10,11 +10,14 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "auth": [
+      "@@auth": [
         "dist/auth"
       ],
       "models": [
         "dist/models"
+      ],
+      "@@login": [
+        "dist/login-lib"
       ]
     },
     "noFallthroughCasesInSwitch": true,
